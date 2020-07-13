@@ -33,8 +33,8 @@ class Song < ActiveRecord::Base
   end
 
   def note_cont
-     note=self.notes.map do |n|
-        n
+     note=self.notes.map do |note|
+        note
      end
   end
 
