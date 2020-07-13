@@ -16,7 +16,7 @@ class Song < ActiveRecord::Base
     ids.each do |con|
       #note=Note.find_or_create_by(content:con)
     #  self.notes << note
-     @note=song.notes.build(content:con)
+     @note=self.notes.build(content:con)
     end
   end
 
