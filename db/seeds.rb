@@ -159,4 +159,6 @@ genres = Hash[[
   "Synthpop"
 ].map { |genre| [genre, Genre.find_or_create_by(name: genre)] }]
 
-
+#note=Note.create(content:"How are you",song_id:"1")
+#note1=Note.create(content:"im fine",song_id:"2")
+#note2=Note.create(content:"good",song_id:"3")
