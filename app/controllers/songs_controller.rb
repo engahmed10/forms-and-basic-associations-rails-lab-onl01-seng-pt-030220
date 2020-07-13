@@ -15,7 +15,7 @@ class SongsController < ApplicationController
   #song[note_ids][]
     #byebug
 #@song=Song.new(title:params[:song][:title],artist_name:params[:song][:artist_name],genre_name:params[:song][:genre_name],note_ids:params[:song][:note_ids])
-
+  @song=Song.new(song_params)
     #byebug
     if @song.save
       redirect_to @song
