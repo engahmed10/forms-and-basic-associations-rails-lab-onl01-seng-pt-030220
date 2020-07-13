@@ -27,11 +27,12 @@ class Song < ActiveRecord::Base
 
   def note_ids=(ids)
     ids.each do |id|
-      #byebug
     note = Note.find(id)
     self.notes << note
     end
   end
+  
+  def 
 
 
 end
