@@ -22,15 +22,15 @@ class Song < ActiveRecord::Base
   end
 
 
-  def note_ids=(ids)
-    ids.each do |note|
-      song.notes.build(content:note)
-    note = Note.find(note)
-    self.notes << note
+  
+
+  def note_cont=(note_ids)
+    note_ids.each do |con|
+      note=Note.find_or_create_by(content:con)
+      song.notes << note
+     #@note=song.notes.build(content:con)
     end
   end
-
-  def
 
 
 end
