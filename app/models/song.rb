@@ -32,9 +32,11 @@ class Song < ActiveRecord::Base
     end
   end
 
-  #def note_cont
-  #   self.notes.each do ||
-  #end
+  def note_cont
+     self.notes.each do |n|
+        n
+     end
+  end
 
 
 
