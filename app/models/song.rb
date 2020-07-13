@@ -32,5 +32,10 @@ class Song < ActiveRecord::Base
     end
   end
 
+  def note_cont
+     
+  end
+  
+
 
 end
