@@ -34,7 +34,7 @@ class Song < ActiveRecord::Base
 
   def note_cont
      self.notes.each do |n|
-        n
+        n.content
      end
   end
 
