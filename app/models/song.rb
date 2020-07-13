@@ -22,7 +22,7 @@ class Song < ActiveRecord::Base
   end
 
 
-  
+
 
   def note_cont=(note_ids)
     note_ids.each do |con|
