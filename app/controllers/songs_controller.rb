@@ -54,9 +54,3 @@ class SongsController < ApplicationController
   end
 end
 
-#note_ids=["",""]
-
-
-#params[:song][:note_ids][]
-#:note_cont => []
-# note_cont=(note_ids)
